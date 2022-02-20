@@ -1,1 +1,10 @@
 
+	
+	KG_long.csv与KG_long2.csv是同一个图KGlong的csv格式导出文件，区别在于导出的形式
+  (KGlong是生成的小学数学知识图谱，仅保留支持率为1的先觉关系概念对)
+
+	KG_long.csv导出时候的查询语句是：
+	MATCH p=()-[r:KGlong]->() RETURN p 
+	
+	KG_long2.csv导出时候的查询语句是：
+	MATCH p=(m)-[r:KGlong]->(n) RETURN m as 前驱节点,r as 关系,n as 后继节点
