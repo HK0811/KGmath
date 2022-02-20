@@ -1,1 +1,2 @@
-
+使用neo4j直接导出的json格式，导出时的查询语句为
+  MATCH p=()-[r:KGlong]->() RETURN p
